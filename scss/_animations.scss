@@ -1,0 +1,21 @@
+@keyframes headerTitleAnimation{
+	from{
+		opacity: 0;
+        filter: blur(4px);
+        transform: translateY(-90px);
+	}
+	to{
+		opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+	}
+}
+
+@keyframes headerInfoAnimation{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}

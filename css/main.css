@@ -74,6 +74,26 @@
   transform: skew(-45deg);
 }
 
+@keyframes headerTitleAnimation {
+  from {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(-90px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+@keyframes headerInfoAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -97,19 +117,24 @@ body {
   height: 80vh;
   padding: 1em;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7)), url("../img/img-welcome-low-res.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8)), url("../img/img-welcome-low-res.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  background-attachment: fixed;
   overflow: hidden;
 }
 .header__title {
   font-family: "Lobster", cursive;
   font-size: 2.4rem;
   color: #ffd100;
+  opacity: 0;
+  animation: headerTitleAnimation 1.5s forwards ease-out;
 }
 .header__info {
   color: #f0f8ff;
   font-size: 1rem;
+  opacity: 0;
+  animation: headerInfoAnimation 1s 1.5s forwards ease-in;
 }
 .header__button {
   color: #ffd100;
@@ -121,6 +146,8 @@ body {
   border: 1px solid #f0f8ff;
   border-radius: 15px;
   background: none;
+  opacity: 0;
+  animation: headerInfoAnimation 1s 2.5s forwards ease-in;
 }
 .header__button::before {
   background-color: #f0f8ff;
@@ -489,7 +516,7 @@ body {
 }
 @media (width >= 992px) {
   .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7)), url("../img/img-welcome-high-res.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8)), url("../img/img-welcome-high-res.jpg");
   }
   .aboutus__box:hover .aboutus__img {
     scale: 1.05;
