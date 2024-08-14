@@ -642,7 +642,7 @@ body {
 	}
 }
 
-@supports (-webkit-backdrop-filter: none) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
 	.header,
 	.contact {
 		background-attachment: scroll;
