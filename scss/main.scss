@@ -180,6 +180,7 @@ body {
 			align-self: center;
 			margin-bottom: 0;
 			font-size: 1.4rem;
+			font-weight: bold;
 			color: black;
 		}
 
@@ -531,7 +532,6 @@ body {
 
 	.offers {
 		&__card-main {
-			border-radius: 0;
 			&--first {
 				background-image: $offer-main-gradient,
 					url('../img/offer-img-1-high-res.jpg');
@@ -551,7 +551,6 @@ body {
 		}
 
 		&__card-info {
-			border-radius: 0;
 			&-text {
 				font-size: 1.8rem;
 			}

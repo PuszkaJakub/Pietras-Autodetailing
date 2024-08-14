@@ -235,6 +235,7 @@ body {
   align-self: center;
   margin-bottom: 0;
   font-size: 1.4rem;
+  font-weight: bold;
   color: black;
 }
 .offers__card-info-button {
@@ -501,9 +502,6 @@ body {
   .aboutus__box-button {
     margin-top: 3rem;
   }
-  .offers__card-main {
-    border-radius: 0;
-  }
   .offers__card-main--first {
     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4)), url("../img/offer-img-1-high-res.jpg");
   }
@@ -515,9 +513,6 @@ body {
   }
   .offers__card-main--fourth {
     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4)), url("../img/offer-img-4-high-res.jpg");
-  }
-  .offers__card-info {
-    border-radius: 0;
   }
   .offers__card-info-text {
     font-size: 1.8rem;
