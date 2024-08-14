@@ -24,7 +24,7 @@ body {
 	height: 80vh;
 	padding: 1em;
 	text-align: center;
-	@include heroImages('../img/img-welcome-low-res.jpg');
+	@include heroImages('./img/img-welcome-low-res.jpg');
 	overflow: hidden;
 
 	&__title {
