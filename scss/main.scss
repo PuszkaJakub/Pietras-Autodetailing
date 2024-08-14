@@ -294,9 +294,8 @@ body {
 	padding-bottom: 5rem;
 	background-image: $contact-gradient,
 		url('../img/contact-bg-img-low-res.jpg');
-	// background-size: cover;
+	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
 	color: $white;
 
 	&__box {
@@ -516,6 +515,7 @@ body {
 @media (width >= 992px) {
 	.header {
 		background-image: $dark-gradient, url('../img/img-welcome-high-res.jpg');
+		background-attachment: fixed;
 	}
 
 	.aboutus {
@@ -570,6 +570,7 @@ body {
 	.contact {
 		background-image: $contact-gradient,
 			url('../img/contact-bg-img-high-res.jpg');
+		background-attachment: fixed;
 		&__list {
 			font-size: 1.4rem;
 		}

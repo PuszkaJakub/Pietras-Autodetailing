@@ -118,8 +118,8 @@ body {
   padding: 1em;
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8)), url("../img/img-welcome-low-res.jpg");
-  background-position: top;
-  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
 .header__title {
@@ -349,8 +349,8 @@ body {
   position: relative;
   padding-bottom: 5rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../img/contact-bg-img-low-res.jpg");
+  background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   color: #f0f8ff;
 }
 .contact__box {
@@ -516,6 +516,7 @@ body {
 @media (width >= 992px) {
   .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8)), url("../img/img-welcome-high-res.jpg");
+    background-attachment: fixed;
   }
   .aboutus__box:hover .aboutus__img {
     scale: 1.05;
@@ -546,6 +547,7 @@ body {
   }
   .contact {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../img/contact-bg-img-high-res.jpg");
+    background-attachment: fixed;
   }
   .contact__list {
     font-size: 1.4rem;
