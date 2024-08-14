@@ -285,8 +285,7 @@ body {
 .contact {
 	position: relative;
 	padding-bottom: 5rem;
-	background-image: $contact-gradient,
-		url("./img/contact-bg-img-low-res.jpg");
+	background-image: $contact-gradient, url('contact-bg-img-low-res.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
