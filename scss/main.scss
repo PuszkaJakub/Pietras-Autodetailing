@@ -292,9 +292,11 @@ body {
 .contact {
 	position: relative;
 	padding-bottom: 5rem;
-	background-image: $contact-gradient, url('../img/contact-bg-img-low-res.jpg');
+	background-image: $contact-gradient,
+		url('../img/contact-bg-img-low-res.jpg');
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 	color: $white;
 
 	&__box {
@@ -637,5 +639,12 @@ body {
 @media (width >= 1200px) {
 	.section-heading {
 		font-size: 2.6rem;
+	}
+}
+
+@supports (-webkit-backdrop-filter: none) {
+	.header,
+	.contact {
+		background-attachment: scroll;
 	}
 }
