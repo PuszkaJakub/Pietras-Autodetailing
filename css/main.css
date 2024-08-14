@@ -100,7 +100,6 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7)), url("../img/img-welcome-low-res.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   overflow: hidden;
 }
 .header__title {
@@ -323,10 +322,9 @@ body {
 .contact {
   position: relative;
   padding-bottom: 5rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("contact-bg-img-low-res.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../img/contact-bg-img-low-res.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   color: #f0f8ff;
 }
 .contact__box {
