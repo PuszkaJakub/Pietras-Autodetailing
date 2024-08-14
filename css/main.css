@@ -4,6 +4,10 @@
   max-width: 1200px;
 }
 
+.section {
+  overflow: hidden;
+}
+
 .section-heading {
   position: relative;
   margin-top: 2em;
@@ -24,7 +28,7 @@
 }
 
 .section-padding {
-  padding: 2em 2em;
+  padding: 2em 2em 1em;
 }
 
 .btn-default-animation {
@@ -169,7 +173,6 @@ body {
 .offers {
   position: relative;
   background-color: #333533;
-  overflow: hidden;
 }
 .offers__card {
   position: relative;
@@ -318,6 +321,7 @@ body {
 
 .contact {
   position: relative;
+  padding-bottom: 5rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../img/contact-bg-img-low-res.jpg");
   background-size: cover;
   background-position: center;
@@ -374,6 +378,35 @@ body {
   margin: 0.5rem 2rem 2rem;
   width: 100%;
   height: 300px;
+}
+
+.footer {
+  color: #f0f8ff;
+  background-color: #202020;
+}
+.footer__box {
+  font-size: 1rem;
+}
+.footer__box-desktop {
+  display: none;
+}
+.footer__box-title {
+  font-size: 1.2rem;
+  font-family: "Lobster", cursive;
+  color: #ffd100;
+}
+.footer__box-social {
+  font-size: 1.4rem;
+  margin: 2em 0 1em;
+}
+.footer__box-social-link {
+  color: #ffd100;
+}
+.footer__bottom-text {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1em;
+  color: #ffd100;
 }
 
 @media (width >= 568px) {
@@ -509,6 +542,37 @@ body {
   }
   .contact__map {
     height: 600px;
+  }
+  .footer__boxes {
+    display: flex;
+  }
+  .footer__box {
+    font-size: 1rem;
+    width: 40%;
+  }
+  .footer__box-social {
+    display: none;
+  }
+  .footer__box-desktop {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer__box-list-title {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .footer__box-list-item {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+  .footer__box-list-item a {
+    color: #f0f8ff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer__box-list-item:hover a {
+    color: #ffd100;
   }
 }
 @media (width >= 1200px) {

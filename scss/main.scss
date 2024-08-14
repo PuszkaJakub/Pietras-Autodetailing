@@ -107,7 +107,6 @@ body {
 .offers {
 	position: relative;
 	background-color: $dark;
-	overflow: hidden;
 
 	&__card {
 		position: relative;
@@ -175,7 +174,6 @@ body {
 		opacity: 0;
 		transition: opacity 0.5s;
 		border-radius: 15px;
-		// overflow: hidden;
 
 		&-text {
 			padding: 2rem;
@@ -286,6 +284,7 @@ body {
 
 .contact{
 	position: relative;
+	padding-bottom: 5rem;
 	background-image: $contact-gradient, url('../img/contact-bg-img-low-res.jpg');
 	background-size: cover;
 	background-position: center;
@@ -350,6 +349,41 @@ body {
 		margin: 0.5rem 2rem 2rem;
 		width: 100%;
 		height: 300px;
+	}
+}
+
+.footer{
+	color: $white;
+	background-color: $black;
+
+	&__box{
+		font-size: 1rem;
+	}
+
+	&__box-desktop{
+		display: none;
+	}
+
+	&__box-title{
+		font-size: 1.2rem;
+		font-family: 'Lobster', cursive;
+		color: $main-color;
+	}
+
+	&__box-social {
+		font-size: 1.4rem;
+		margin: 2em 0 1em;
+	}
+
+	&__box-social-link{
+		color: $main-color;
+	}
+
+	&__bottom-text{
+		text-align: center;
+		font-size: 1.4rem;
+		padding: 1em;
+		color: $main-color;
 	}
 }
 
@@ -448,7 +482,6 @@ body {
 	}
 
 	.contact{
-		
 		&__list{
 			font-size: 1.2rem;
 		}
@@ -471,7 +504,6 @@ body {
 			height: 450px;
 		}
 	}
-
 }
 
 @media (width >= 992px) {
@@ -553,6 +585,48 @@ body {
 	
 		&__map{
 			height: 600px;
+		}
+	}
+
+	.footer{
+		&__boxes{
+			display: flex;
+		}
+	
+		&__box{
+			font-size: 1rem;
+			width: 40%;
+		}
+
+		&__box-social{
+			display: none;
+		}
+	
+		&__box-desktop{
+			width: 60%;
+			display: flex;
+			justify-content: space-around;
+		}
+
+		&__box-list-title{
+			font-size: 1.4rem;
+			text-align: left;
+		}
+
+		&__box-list-item{
+			list-style: none;
+			margin-bottom: 0.5rem;
+			a{
+				color: $white;
+				text-decoration: none;
+				transition: color .3s;
+			}
+
+			&:hover{
+				a{
+					color: $main-color;
+				}
+			}
 		}
 	}
 }
