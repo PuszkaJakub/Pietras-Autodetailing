@@ -296,7 +296,7 @@ body {
 		url('../img/contact-bg-img-low-res.jpg');
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	color: $white;
 
 	&__box {
@@ -639,12 +639,5 @@ body {
 @media (width >= 1200px) {
 	.section-heading {
 		font-size: 2.6rem;
-	}
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-	.header,
-	.contact {
-		background-attachment: scroll;
 	}
 }
